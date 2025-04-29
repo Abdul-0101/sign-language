@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Language Detection (Browser)</title>
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 20px; background: #f0f2f5; }
+    video { border: 3px solid #007bff; border-radius: 10px; transform: scaleX(-1); }
+    #output { font-size: 24px; margin-top: 20px; color: #222; }
+  </style>
+</head>
+<body>
+
+  <h1>✋ Sign Language Recognition</h1>
+  <video id="video" width="640" height="480" autoplay muted playsinline></video>
+  <div id="output">Letter: -</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
